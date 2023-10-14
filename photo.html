@@ -3,9 +3,7 @@
 <head>
 <title>Quan Dung Album</title>
 <meta http-equiv="imagetoolbar" content="no">
-<meta name="og:url" content="http://quandung.com/">
 <meta name="og:type" content="website">
-<meta name="og:description" content="Personal Website">	
 <meta name="fb:app_id" content="100001759189770">	
 	
 <style type="text/css">
@@ -270,17 +268,6 @@ h3 {
 
 <div class="container">   
    
-    <ul id="paneltwo">
-        <li class="mask"><h3>ALBUM >></h3></li>
-        <li class="linkOne"><a href="/personal">Personal Life</a></li>
-		<li class="linktwo"><a href="/academic">Academic Life</a></li>
-        <li class="linkthree"><a href="/love">Love Life</a></li>
-	
-        
-      
-  
-      
-    </ul>
 </div>
 
 
@@ -292,7 +279,7 @@ h3 {
 		position: absolute;
 		margin: 0px;
 		padding: 0px;
-		background:url(images/bg.jpg);
+		background:url(images/personal/bg_q.jpg);
 	
 		width: 100%;
 		height: 100%;
@@ -312,8 +299,9 @@ h3 {
 		left: -9999px;
 		cursor: pointer;
         image-rendering: optimizeSpeed;
-        object-fit: scale-down; 
+         object-fit: scale-down; 
 		max-width: 100%;
+		scale: 20%;
 	}
 	#screen .href {
 		border: #FFF dotted 1px;
@@ -357,7 +345,7 @@ h3 {
 	}
 	#urlInfo {
 		position: absolute;
-		background: url(images/r.gif) no-repeat 0 4px;
+		background: url(images/personal/r.gif) no-repeat 0 4px;
 		visibility: hidden;
 		z-index: 30000;
 		padding-left: 12px;
@@ -383,7 +371,7 @@ var m3D = function () {
 		bar,
 		selected,
 		urlInfo,
-		imagesPath = "images/gallery/",
+		imagesPath = "images/personal/",
 		camera = {x:0, y:0, z:-650, s:0, fov: 500},
 		nw = 0,
 		nh = 0;
@@ -753,9 +741,10 @@ position:fixed;
 
 <div id="screen">
 
-	<div id="command">
-
+<div id="command">
+	
 		<div id="bar"></div>
+
 
 </div>
 	<div id="urlInfo"></div>
