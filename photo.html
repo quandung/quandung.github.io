@@ -1,7 +1,12 @@
 
 <html>
 <head>
-
+<title>Quan Dung Album</title>
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="og:url" content="http://quandung.com/">
+<meta name="og:type" content="website">
+<meta name="og:description" content="Personal Website">	
+<meta name="fb:app_id" content="100001759189770">	
 	
 <style type="text/css">
 body {
@@ -263,7 +268,20 @@ h3 {
 </style>
 
 
-
+<div class="container">   
+   
+    <ul id="paneltwo">
+        <li class="mask"><h3>ALBUM >></h3></li>
+        <li class="linkOne"><a href="/personal">Personal Life</a></li>
+		<li class="linktwo"><a href="/academic">Academic Life</a></li>
+        <li class="linkthree"><a href="/love">Love Life</a></li>
+	
+        
+      
+  
+      
+    </ul>
+</div>
 
 
 <style type="text/css">
@@ -294,8 +312,8 @@ h3 {
 		left: -9999px;
 		cursor: pointer;
         image-rendering: optimizeSpeed;
-		scale: 20%;
-     
+        object-fit: scale-down; 
+		max-width: 100%;
 	}
 	#screen .href {
 		border: #FFF dotted 1px;
@@ -718,7 +736,15 @@ setInterval( function() {
 	
 }); 
 </script>
-
+<style>
+.img-fluid{
+width:90px;
+height:80px;
+margin-top:63px;
+margin-left:53px;
+position:fixed;
+}
+</style>
 
 <body>
 		
@@ -729,9 +755,7 @@ setInterval( function() {
 
 	<div id="command">
 
-
 		<div id="bar"></div>
-
 
 </div>
 	<div id="urlInfo"></div>
@@ -744,7 +768,7 @@ setInterval( function() {
 setTimeout(function() {
 	m3D.init(
 		[ 
-			{ src: '1.jpg' },
+			{ src: '1.jpg', url: 'http://#', title: '', color: '#fff' },
 			{ src: '2.jpg' },
 			{ src: '3.jpg' },
 			{ src: '4.jpg' },
@@ -754,10 +778,10 @@ setTimeout(function() {
 			{ src: '8.jpg' },
 			{ src: '9.jpg' },
 			{ src: '10.jpg' },
-			{ src: '11.jpg' },
+			{ src: '11.jpg', url: 'http://#', title: '', color: '#fff' },
 			{ src: '12.jpg' },
 			{ src: '13.jpg' },
-			{ src: '1.jpg' },
+			{ src: '1.jpg', url: 'http://#', title: '', color: '#fff' },
 			{ src: '2.jpg' },
 			{ src: '25.jpg' },
 			{ src: '24.jpg' },
@@ -767,7 +791,7 @@ setTimeout(function() {
 			{ src: '20.jpg' },
 			{ src: '19.jpg' },
 			{ src: '18.jpg' },
-			{ src: '17.jpg'},
+			{ src: '17.jpg', url: 'http://#', title: '', color: '#fff' },
 			{ src: '16.jpg' },
 			{ src: '15.jpg' },
 			{ src: '27.jpg' },
@@ -790,6 +814,104 @@ setTimeout(function() {
 	);
 }, 500);
 </script>
+
+<script language="JavaScript1.2">
+var message="I'm sorry ! You are not permited to download my photos";
+function click(e)
+{
+  if (document.all)
+  {
+    if (event.button==2||event.button==3)
+    {
+      alert(message);
+      return false;
+    }
+  }
+  else
+  {
+    if (e.button==2||e.button==4)
+    {
+      e.preventDefault();
+      e.stopPropagation();
+      alert(message);
+      return false;
+    }
+  }
+}
+if (document.all) // for IE
+{
+  document.onmousedown=click;
+}
+else // for FF
+{
+  document.onclick=click;
+}
+</script>
+<script type="text/javascript">
+function ehan( evnt )
+{
+  if( evnt.which == 3 )
+  {
+    alert( "Text Here" );
+    return false;
+  }
+  return true;
+}
+function ocmh()
+{
+  alert( "I'm sorry ! You are not permited to download my photos" );
+  return false;
+}
+document.oncontextmenu = ocmh;
+document.captureEvents( Event.MOUSEDOWN );
+if( document.layers ) document.onmousedown = ehan;
+</script>
+<SCRIPT language="JavaScript">
+if (window!=top){top.location.href=location.href;}
+</script>
+<script type="text/javascript">
+<!--
+var omitformtags=["input", "textarea", "select"]
+omitformtags=omitformtags.join("|")
+function disableselect(e){
+if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+return false
+}
+function reEnable(){
+return true
+}
+if (typeof document.onselectstart!="undefined")
+document.onselectstart=new Function ("return false")
+else{
+document.onmousedown=disableselect
+document.onmouseup=reEnable
+}
+-->
+</script>
+
+    <SCRIPT language="JavaScript">
+if (window!=top){top.location.href=location.href;}
+</script>
+<script type="text/javascript">
+<!--
+var omitformtags=["input", "textarea", "select"]
+omitformtags=omitformtags.join("|")
+function disableselect(e){
+if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+return false
+}
+function reEnable(){
+return true
+}
+if (typeof document.onselectstart!="undefined")
+document.onselectstart=new Function ("return false")
+else{
+document.onmousedown=disableselect
+document.onmouseup=reEnable
+}
+-->
+</script>
+
 
 <center>
 <div class="container">
