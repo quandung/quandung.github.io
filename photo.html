@@ -1,10 +1,15 @@
 
 <html>
 <head>
-<title>Quan Dung Album</title>
+<title>Quan Dung Wedding Photos</title>
 <meta http-equiv="imagetoolbar" content="no">
+<meta property="og:image" content="images/gallery/35.jpg">
+<meta name="og:url" content="http://quandung.com/">
 <meta name="og:type" content="website">
-<meta name="fb:app_id" content="100001759189770">	
+<meta name="og:title" content="Quan Dung">
+<meta name="og:image" content="images/gallery/35.jpg">
+<meta name="og:description" content="Personal Website">	
+
 	
 <style type="text/css">
 body {
@@ -268,6 +273,7 @@ h3 {
 
 <div class="container">   
    
+ 
 </div>
 
 
@@ -301,7 +307,6 @@ h3 {
         image-rendering: optimizeSpeed;
          object-fit: scale-down; 
 		max-width: 100%;
-		scale: 20%;
 	}
 	#screen .href {
 		border: #FFF dotted 1px;
@@ -741,7 +746,9 @@ position:fixed;
 
 <div id="screen">
 
-<div id="command">
+	<div id="command">
+
+		
 	
 		<div id="bar"></div>
 
@@ -757,7 +764,7 @@ position:fixed;
 setTimeout(function() {
 	m3D.init(
 		[ 
-			{ src: '1.jpg', url: 'http://#', title: '', color: '#fff' },
+			{ src: '1.jpg' },
 			{ src: '2.jpg' },
 			{ src: '3.jpg' },
 			{ src: '4.jpg' },
@@ -767,11 +774,11 @@ setTimeout(function() {
 			{ src: '8.jpg' },
 			{ src: '9.jpg' },
 			{ src: '10.jpg' },
-			{ src: '11.jpg', url: 'http://#', title: '', color: '#fff' },
+			{ src: '11.jpg' },
 			{ src: '12.jpg' },
 			{ src: '13.jpg' },
-			{ src: '1.jpg', url: 'http://#', title: '', color: '#fff' },
-			{ src: '2.jpg' },
+			{ src: '14.jpg'},
+			{ src: '26.jpg' },
 			{ src: '25.jpg' },
 			{ src: '24.jpg' },
 			{ src: '23.jpg' },
@@ -780,7 +787,7 @@ setTimeout(function() {
 			{ src: '20.jpg' },
 			{ src: '19.jpg' },
 			{ src: '18.jpg' },
-			{ src: '17.jpg', url: 'http://#', title: '', color: '#fff' },
+			{ src: '17.jpg' },
 			{ src: '16.jpg' },
 			{ src: '15.jpg' },
 			{ src: '27.jpg' },
@@ -797,7 +804,9 @@ setTimeout(function() {
 			{ src: '38.jpg' },
 			{ src: '39.jpg' },
 			{ src: '40.jpg' },
-		
+			{ src: '41.jpg' },
+			{ src: '42.jpg' },
+			{ src: '43.jpg' },
 			
 		]
 	);
@@ -805,7 +814,7 @@ setTimeout(function() {
 </script>
 
 <script language="JavaScript1.2">
-var message="I'm sorry ! You are not permited to download my photos";
+var message="Sorry! Bạn không được phép tải hình";
 function click(e)
 {
   if (document.all)
@@ -848,7 +857,7 @@ function ehan( evnt )
 }
 function ocmh()
 {
-  alert( "I'm sorry ! You are not permited to download my photos" );
+  alert( "Sorry! Bạn không được phép tải hình" );
   return false;
 }
 document.oncontextmenu = ocmh;
